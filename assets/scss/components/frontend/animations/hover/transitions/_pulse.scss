@@ -1,0 +1,23 @@
+
+@include keyframes( #{$global-class-prefix}pulse ) {
+
+	25% {
+		@include transform( scale( 1.1 ) );
+	}
+
+	75% {
+		@include transform( scale(0.9 ) );
+	}
+}
+
+.#{$global-class-prefix}pulse {
+
+	&:hover,
+	&:focus,
+	&:active {
+		animation-name: #{$global-class-prefix}pulse;
+		animation-duration: $hover-medium-duration;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+}

@@ -1,0 +1,23 @@
+
+@include keyframes( #{$global-class-prefix}buzz ) {
+
+	50% {
+		@include transform( translateX(3px) rotate(2deg) );
+	}
+
+	100% {
+		@include transform( translateX(-3px) rotate(-2deg) );
+	}
+}
+
+.#{$global-class-prefix}buzz {
+
+	&:hover,
+	&:focus,
+	&:active {
+		animation-name: #{$global-class-prefix}buzz;
+		animation-duration: 0.15s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+}

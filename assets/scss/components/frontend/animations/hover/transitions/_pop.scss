@@ -1,0 +1,19 @@
+
+@include keyframes( #{$global-class-prefix}pop ) {
+
+	50% {
+		@include transform( scale( 1.2 ) );
+	}
+}
+
+.#{$global-class-prefix}pop {
+
+	&:hover,
+	&:focus,
+	&:active {
+		animation-name: #{$global-class-prefix}pop;
+		animation-duration: $hover-medium-duration;
+		animation-timing-function: linear;
+		animation-iteration-count: 1;
+	}
+}

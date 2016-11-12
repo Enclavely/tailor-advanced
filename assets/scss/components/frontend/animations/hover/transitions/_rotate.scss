@@ -1,0 +1,12 @@
+
+.#{$global-class-prefix}rotate {
+
+	@include transition-property( transform );
+	@include transition-duration( $hover-medium-duration );
+
+	&:hover,
+	&:focus,
+	&:active {
+		@include transform( rotate( 4deg ) );
+	}
+}

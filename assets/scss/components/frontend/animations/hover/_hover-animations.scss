@@ -1,0 +1,34 @@
+
+$hover-fast-duration: .1s !default;
+$hover-medium-duration: .3s !default;
+$hover-slow-duration: .5s !default;
+
+// 2D transitions
+@import "transitions/grow";
+@import "transitions/shrink";
+@import "transitions/pulse";
+@import "transitions/pulse-grow";
+@import "transitions/pulse-shrink";
+@import "transitions/push";
+@import "transitions/bounce-in";
+@import "transitions/bounce-out";
+@import "transitions/rotate";
+@import "transitions/grow-rotate";
+@import "transitions/float";
+@import "transitions/sink";
+@import "transitions/bob";
+@import "transitions/hang";
+@import "transitions/skew";
+@import "transitions/skew-forward";
+@import "transitions/skew-backward";
+@import "transitions/wobble-horizontal";
+@import "transitions/wobble-vertical";
+@import "transitions/wobble-to-bottom-right";
+@import "transitions/wobble-to-top-right";
+@import "transitions/wobble-top";
+@import "transitions/wobble-bottom";
+@import "transitions/wobble-skew";
+@import "transitions/buzz";
+@import "transitions/buzz-out";
+@import "transitions/forward";
+@import "transitions/backward";

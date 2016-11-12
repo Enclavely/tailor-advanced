@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "tinymce.min.css",
+	"sources": [
+		"../scss/tinymce.scss",
+		"../scss/_variables.scss",
+		"../scss/tools/_transform.scss",
+		"../scss/tools/_transition.scss",
+		"../scss/tools/_prefixer.scss"
+	],
+	"mappings": "AAaA,AAMG,UANO,CAET,eAAe,AAEb,qBAAqB,CAErB,2BAAe,AAEA,CACb,OAAO,CAAE,IAAK,CACd",
+	"names": []
+}

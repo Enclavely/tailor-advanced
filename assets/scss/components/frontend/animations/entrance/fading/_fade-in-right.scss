@@ -1,0 +1,16 @@
+@include keyframes( fadeInRight ) {
+
+	from {
+		opacity: 0;
+		@include transform( translate3d(100%, 0, 0) );
+	}
+
+	to {
+		opacity: 1;
+		@include transform( none );
+	}
+}
+
+.fadeInRight {
+	animation-name: fadeInRight;
+}

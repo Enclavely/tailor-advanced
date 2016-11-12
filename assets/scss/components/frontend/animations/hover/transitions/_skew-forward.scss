@@ -1,0 +1,13 @@
+
+.#{$global-class-prefix}skew-forward {
+
+	@include transition-property( transform );
+	@include transition-duration( $hover-medium-duration );
+	@include transform-origin( 0 100% );
+
+	&:hover,
+	&:focus,
+	&:active {
+		@include transform( skew(-10deg) );
+	}
+}

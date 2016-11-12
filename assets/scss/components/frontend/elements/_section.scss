@@ -1,0 +1,19 @@
+
+//
+// Exported selectors
+//
+.#{$global-class-prefix}ui {
+
+	.#{$global-class-prefix}section {
+
+		&.has-background-video {
+
+			.#{$global-class-prefix}section {
+
+				&__background {
+					overflow: hidden;
+				}
+			}
+		}
+	}
+}

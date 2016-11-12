@@ -1,0 +1,20 @@
+
+@include keyframes( #{$global-class-prefix}pulse-grow ) {
+
+	to {
+		@include transform( scale( 1.1 ) );
+	}
+}
+
+.#{$global-class-prefix}pulse-grow {
+
+	&:hover,
+	&:focus,
+	&:active {
+		animation-name: #{$global-class-prefix}pulse-grow;
+		animation-duration: $hover-medium-duration;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+}

@@ -1,0 +1,39 @@
+
+@include keyframes( #{$global-class-prefix}wobble-vertical ) {
+
+	16.65% {
+		@include transform( translateY(8px) );
+	}
+
+	33.3% {
+		@include transform( translateY(-6px) );
+	}
+
+	49.95% {
+		@include transform( translateY(4px) );
+	}
+
+	66.6% {
+		@include transform( translateY(-2px) );
+	}
+
+	83.25% {
+		@include transform( translateY(1px) );
+	}
+
+	100% {
+		@include transform( translateY(0) );
+	}
+}
+
+.#{$global-class-prefix}wobble-vertical {
+
+	&:hover,
+	&:focus,
+	&:active {
+		animation-name: #{$global-class-prefix}wobble-vertical;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: 1;
+	}
+}

@@ -1,0 +1,14 @@
+
+.#{$global-class-prefix}sink {
+
+	@include transition-property( transform );
+	@include transition-duration( $hover-medium-duration );
+
+	transition-timing-function: ease-out;
+
+	&:hover,
+	&:focus,
+	&:active {
+		@include transform( translateY(8px) );
+	}
+}

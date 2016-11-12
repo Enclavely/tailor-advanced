@@ -1,0 +1,36 @@
+//
+// Variables
+//
+
+// General
+$image-class-prefix: $global-class-prefix !default;
+$image-padding: 0 !default;
+$image-spacing-vertical: $global-spacing-vertical !default;
+$image-border-width: $global-border-width !default;
+$image-border-style : none !default;
+$image-border-color: $global-border-color !default;
+$image-border-radius: $global-border-radius !default;
+$image-box-shadow: none !default;
+
+
+//
+// Exported selectors
+//
+.#{$global-class-prefix}ui {
+
+	.#{$image-class-prefix}image {
+		padding: $image-padding;
+		margin-bottom: $image-spacing-vertical;
+		border: $image-border-width $image-border-style $image-border-color;
+		border-radius: $image-border-radius;
+		box-shadow: $image-box-shadow;
+
+		img {
+			display: inline-block;
+		}
+
+		&__link {
+			display: block;
+		}
+	}
+}

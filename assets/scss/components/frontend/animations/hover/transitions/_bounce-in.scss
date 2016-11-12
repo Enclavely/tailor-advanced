@@ -1,0 +1,13 @@
+
+.#{$global-class-prefix}bounce-in {
+
+	@include transition-property( transform );
+	@include transition-duration( $hover-slow-duration );
+
+	&:hover,
+	&:focus,
+	&:active {
+		@include transform( scale( 1.2 ) );
+		transition-timing-function:  cubic-bezier(.47,2.02,.31,-0.36);
+	}
+}

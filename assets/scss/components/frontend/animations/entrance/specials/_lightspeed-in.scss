@@ -1,0 +1,27 @@
+@include keyframes( lightSpeedIn ) {
+
+	from {
+		@include transform( translate3d(100%, 0, 0) skewX(-30deg) );
+		opacity: 0;
+	}
+
+	60% {
+		@include transform( skewX(20deg) );
+		opacity: 1;
+	}
+
+	80% {
+		@include transform( skewX(-5deg) );
+		opacity: 1;
+	}
+
+	to {
+		@include transform( none );
+		opacity: 1;
+	}
+}
+
+.lightSpeedIn {
+	animation-name: lightSpeedIn;
+	animation-timing-function: ease-out;
+}

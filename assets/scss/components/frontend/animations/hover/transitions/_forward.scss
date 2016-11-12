@@ -1,0 +1,12 @@
+
+.#{$global-class-prefix}forward {
+
+	@include transition-property( transform );
+	@include transition-duration( $hover-medium-duration );
+
+	&:hover,
+	&:focus,
+	&:active {
+		@include transform( translateX(8px) );
+	}
+}

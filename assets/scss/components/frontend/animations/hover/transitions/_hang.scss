@@ -1,0 +1,37 @@
+
+@include keyframes( #{$global-class-prefix}hang ) {
+
+	0% {
+		@include transform( translateY( 8px ) );
+	}
+
+	50% {
+		@include transform( translateY( 4px ) );
+	}
+
+	100% {
+		@include transform( translateY( 8px ) );
+	}
+}
+
+@include keyframes( #{$global-class-prefix}hang-sink ) {
+
+	100% {
+		@include transform( translateY( 8px ) );
+	}
+}
+
+.#{$global-class-prefix}hang {
+
+	&:hover,
+	&:focus,
+	&:active {
+		animation-name: #{$global-class-prefix}hang-sink, #{$global-class-prefix}hang;
+		animation-duration: .3s, 1.5s;
+		animation-delay: 0s, .3s;
+		animation-timing-function: ease-out, ease-in-out;
+		animation-iteration-count: 1, infinite;
+		animation-fill-mode: forwards;
+		animation-direction: normal, alternate;
+	}
+}

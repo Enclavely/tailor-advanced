@@ -1,0 +1,20 @@
+
+@include keyframes( #{$global-class-prefix}pulse-shrink ) {
+
+	to {
+		@include transform( scale( 0.9 ) );
+	}
+}
+
+.#{$global-class-prefix}pulse-shrink {
+
+	&:hover,
+	&:focus,
+	&:active {
+		animation-name: #{$global-class-prefix}pulse-shrink;
+		animation-duration: $hover-medium-duration;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+}

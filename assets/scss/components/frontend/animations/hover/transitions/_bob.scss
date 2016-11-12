@@ -1,0 +1,36 @@
+@include keyframes( #{$global-class-prefix}bob ) {
+
+	0% {
+		@include transform( translateY( -8px ) );
+	}
+
+	50% {
+		@include transform( translateY( -4px ) );
+	}
+
+	100% {
+		@include transform( translateY( -8px ) );
+	}
+}
+
+@include keyframes( #{$global-class-prefix}bob-float ) {
+
+	100% {
+		@include transform( translateY( -8px ) );
+	}
+}
+
+.#{$global-class-prefix}bob {
+
+	&:hover,
+	&:focus,
+	&:active {
+		animation-name: #{$global-class-prefix}bob-float, #{$global-class-prefix}bob;
+		animation-duration: .3s, 1.5s;
+		animation-delay: 0s, .3s;
+		animation-timing-function: ease-out, ease-in-out;
+		animation-iteration-count: 1, infinite;
+		animation-fill-mode: forwards;
+		animation-direction: normal, alternate;
+	}
+}

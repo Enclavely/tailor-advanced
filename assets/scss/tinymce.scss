@@ -1,0 +1,28 @@
+@import "variables";
+
+//
+// Tools
+//
+@import "tools/transform";
+@import "tools/transition";
+@import "tools/prefixer";
+
+
+//
+// Exported selectors
+//
+.#{$global-class-prefix}ui {
+
+	.#{$global-class-prefix}section {
+
+		&.has-background-video {
+
+			.#{$global-class-prefix}section {
+
+				&__background {
+					display: none;
+				}
+			}
+		}
+	}
+}

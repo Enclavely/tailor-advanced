@@ -1,0 +1,16 @@
+@include keyframes( fadeInLeft ) {
+
+	from {
+		opacity: 0;
+		@include transform( translate3d(-100%, 0, 0) );
+	}
+
+	to {
+		opacity: 1;
+		@include transform( none );
+	}
+}
+
+.fadeInLeft {
+	animation-name: fadeInLeft;
+}

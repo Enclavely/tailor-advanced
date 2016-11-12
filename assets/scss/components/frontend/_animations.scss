@@ -1,0 +1,37 @@
+
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+
+	&.infinite {
+		animation-iteration-count: infinite;
+	}
+
+	&.hinge {
+		animation-duration: 2s;
+	}
+
+	&.flipOutX,
+	&.flipOutY,
+	&.bounceIn,
+	&.bounceOut {
+		animation-duration: .75s;
+	}
+}
+
+[data-animation]:not( .animated ) {
+	visibility: hidden;
+}
+
+#canvas {
+
+	[data-animation] {
+		visibility: visible;
+	}
+}
+
+// Entrance animations
+@import "animations/entrance/entrance-animations";
+
+// Hover animations
+@import "animations/hover/hover-animations";

@@ -1,0 +1,2 @@
+node-sass --output-style expanded --sourceMap assets/css/frontend.css.map assets/scss/frontend.scss assets/css/frontend.css
+node-sass --output-style expanded --sourceMap assets/css/tinymce.css.map assets/scss/tinymce.scss assets/css/tinymce.css

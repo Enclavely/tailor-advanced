@@ -1,0 +1,15 @@
+$global-class-prefix: 'tailor-' !default;
+
+$global-spacing-vertical: 1rem !default;
+$global-spacing-horizontal: 1rem !default;
+
+$global-border-width: 1px !default;
+$global-border-style: solid !default;
+$global-border-color: #efefef !default;
+$global-border-radius: 2px !default;
+$global-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.05) !default;
+
+$mobile: "only screen and (max-width: 320px)" !default;
+$tablet: "only screen and (min-width: 321px) and (max-width: 720px)" !default;
+$tablet-up: "only screen and (min-width: 321px)" !default;
+$desktop: "only screen and (min-width: 721px)" !default;

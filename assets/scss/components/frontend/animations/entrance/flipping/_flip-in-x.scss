@@ -1,0 +1,31 @@
+@include keyframes( flipInX ) {
+
+	from {
+		@include transform( perspective(400px) rotate3d(1, 0, 0, 90deg) );
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+
+	40% {
+		@include transform( perspective(400px) rotate3d(1, 0, 0, -20deg) );
+		animation-timing-function: ease-in;
+	}
+
+	60% {
+		@include transform( perspective(400px) rotate3d(1, 0, 0, 10deg) );
+		opacity: 1;
+	}
+
+	80% {
+		@include transform( perspective(400px) rotate3d(1, 0, 0, -5deg) );
+	}
+
+	to {
+		@include transform( perspective(400px) );
+	}
+}
+
+.flipInX {
+	backface-visibility: visible !important;
+	animation-name: flipInX;
+}

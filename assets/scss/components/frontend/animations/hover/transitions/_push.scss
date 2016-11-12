@@ -1,0 +1,23 @@
+
+@include keyframes( #{$global-class-prefix}push ) {
+
+	50% {
+		@include transform( scale( 0.8 ) );
+	}
+
+	100% {
+		@include transform( scale( 1 ) );
+	}
+}
+
+.#{$global-class-prefix}push {
+
+	&:hover,
+	&:focus,
+	&:active {
+		animation-name: #{$global-class-prefix}push;
+		animation-duration: $hover-medium-duration;
+		animation-timing-function: linear;
+		animation-iteration-count: 1;
+	}
+}

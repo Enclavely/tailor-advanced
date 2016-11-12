@@ -1,0 +1,12 @@
+
+.#{$global-class-prefix}grow {
+
+	@include transition-property( transform );
+	@include transition-duration( $hover-medium-duration );
+
+	&:hover,
+	&:focus,
+	&:active {
+		@include transform( scale( 1.1 ) );
+	}
+}

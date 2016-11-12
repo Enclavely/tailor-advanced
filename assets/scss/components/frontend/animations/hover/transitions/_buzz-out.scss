@@ -1,0 +1,55 @@
+
+@include keyframes( #{$global-class-prefix}buzz-out ) {
+
+	10% {
+		@include transform( translateX(3px) rotate(2deg) );
+	}
+
+	20% {
+		@include transform( translateX(-3px) rotate(-2deg) );
+	}
+
+	30% {
+		@include transform( translateX(3px) rotate(2deg) );
+	}
+
+	40% {
+		@include transform( translateX(-3px) rotate(-2deg) );
+	}
+
+	50% {
+		@include transform( translateX(2px) rotate(1deg) );
+	}
+
+	60% {
+		@include transform( translateX(-2px) rotate(-1deg) );
+	}
+
+	70% {
+		@include transform( translateX(2px) rotate(1deg) );
+	}
+
+	80% {
+		@include transform( translateX(-2px) rotate(-1deg) );
+	}
+
+	90% {
+		@include transform( translateX(1px) rotate(0) );
+	}
+
+	100% {
+		@include transform( translateX(-1px) rotate(0) );
+	}
+}
+
+.#{$global-class-prefix}buzz-out {
+
+	&:hover,
+	&:focus,
+	&:active {
+		animation-name: #{$global-class-prefix}buzz-out;
+		animation-duration: 0.75s;
+		animation-timing-function: linear;
+		animation-iteration-count: 1;
+	}
+}
