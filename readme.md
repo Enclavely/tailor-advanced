@@ -1,4 +1,4 @@
-# Advanced features extension for the [Tailor frontend page builder](http://www.gettailor.com/)
+# Advanced Features extension for the [Tailor frontend page builder](http://www.gettailor.com/)
 
 This is the official GitHub repository for the Tailor Advanced Features extension plugin, which introduces new elements and features.
 
@@ -18,6 +18,8 @@ The following features are added by this extension:
 * Hover animations for content element (using [Hover.css](http://ianlunn.github.io/Hover/)).
 * Advanced box shadow settings.
 * Video backgrounds for Sections (HTML5, YouTube and Vimeo supported).
+
+With much more on the way.. 
 
 If there's a feature you'd like to see added to this extension, please get in touch:
 
