@@ -1,13 +1,8 @@
-# Advanced features for the [Tailor page builder](http://www.gettailor.com/) for WordPress
+# Advanced features extension for the [Tailor frontend page builder](http://www.gettailor.com/)
 
-A collection of advanced features for the Tailor page builder.
+This is the official GitHub repository for the Tailor Advanced Features extension plugin, which introduces new elements and features.
 
 ## Elements
-
-The following elements are added by this extension:
-
-- Restricted content
-- Image
 
 The following elements are added by this extension:
 
