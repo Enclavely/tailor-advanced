@@ -68,6 +68,12 @@ If you like the plugin, you can help by [rating it](https://wordpress.org/suppor
 
 == Screenshots ==
 
+1. **Entrance animations** - Entrance animations can be applied to any element.  Configure the duration, delay and whether the animation should repeat each time the element appears on screen.
+
+2. **Hover animations** - Hover animations can be applied to any content element.
+
+3. **Video background** - Video backgrounds can be applied to any Section element.  The background image, if selected, will serve as a fallback and you can apply an overlay color.
+
 == Frequently Asked Questions ==
 
 = Can I use my existing WordPress theme? =
