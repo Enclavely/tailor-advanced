@@ -1,0 +1,502 @@
+# Copyright (C) 2016 Tailor - Advanced features
+# This file is distributed under the same license as the Tailor - Advanced features package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tailor - Advanced features 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tailor-advanced\n"
+"POT-Creation-Date: 2016-11-13 09:03:52+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/elements/class-image.php:26
+#: includes/elements/class-restricted-content.php:26
+msgid "General"
+msgstr ""
+
+#: includes/elements/class-image.php:31
+#: includes/elements/class-restricted-content.php:31
+msgid "Colors"
+msgstr ""
+
+#: includes/elements/class-image.php:36
+#: includes/elements/class-restricted-content.php:36
+msgid "Attributes"
+msgstr ""
+
+#: includes/elements/class-image.php:45
+msgid "Type"
+msgstr ""
+
+#: includes/elements/class-image.php:48
+msgid "Media Library"
+msgstr ""
+
+#: includes/elements/class-image.php:49
+msgid "External image"
+msgstr ""
+
+#: includes/elements/class-image.php:59 includes/elements/class-image.php:75
+#: includes/elements/class-image.php:161 includes/helpers-elements.php:30
+msgid "Image"
+msgstr ""
+
+#: includes/elements/class-image.php:94
+msgid "Caption"
+msgstr ""
+
+#: includes/elements/class-image.php:141
+msgid "The maximum image width as a percentage"
+msgstr ""
+
+#: includes/elements/class-image.php:157
+msgid "Image link"
+msgstr ""
+
+#: includes/elements/class-image.php:160 includes/helpers-general.php:34
+#: includes/helpers-general.php:172
+msgid "None"
+msgstr ""
+
+#: includes/elements/class-image.php:162
+msgid "Lightbox"
+msgstr ""
+
+#: includes/elements/class-image.php:192
+msgid "Caption color"
+msgstr ""
+
+#: includes/elements/class-restricted-content.php:44
+msgid "Title"
+msgstr ""
+
+#: includes/elements/class-restricted-content.php:45
+msgid "The title to display above the login form"
+msgstr ""
+
+#: includes/helpers-elements.php:31
+msgid "Display a single image."
+msgstr ""
+
+#: includes/helpers-elements.php:32 includes/helpers-elements.php:38
+#: includes/helpers-video.php:15
+msgid "Advanced"
+msgstr ""
+
+#: includes/helpers-elements.php:36
+msgid "Restricted"
+msgstr ""
+
+#: includes/helpers-elements.php:37
+msgid "Display content to registered users."
+msgstr ""
+
+#: includes/helpers-general.php:31
+msgid "Entrance animation"
+msgstr ""
+
+#: includes/helpers-general.php:37
+msgid "Fading"
+msgstr ""
+
+#: includes/helpers-general.php:38
+msgid "Fade in"
+msgstr ""
+
+#: includes/helpers-general.php:39
+msgid "Fade in down"
+msgstr ""
+
+#: includes/helpers-general.php:40
+msgid "Fade in down big"
+msgstr ""
+
+#: includes/helpers-general.php:41
+msgid "Fade in left"
+msgstr ""
+
+#: includes/helpers-general.php:42
+msgid "Fade in left big"
+msgstr ""
+
+#: includes/helpers-general.php:43
+msgid "Fade in right"
+msgstr ""
+
+#: includes/helpers-general.php:44
+msgid "Fade in right big"
+msgstr ""
+
+#: includes/helpers-general.php:45
+msgid "Fade in up"
+msgstr ""
+
+#: includes/helpers-general.php:46
+msgid "Fade in up big"
+msgstr ""
+
+#: includes/helpers-general.php:50
+msgid "Attention seekers"
+msgstr ""
+
+#: includes/helpers-general.php:51
+msgid "Bounce"
+msgstr ""
+
+#: includes/helpers-general.php:52
+msgid "Flash"
+msgstr ""
+
+#: includes/helpers-general.php:53
+msgid "Head shake"
+msgstr ""
+
+#: includes/helpers-general.php:54
+msgid "Jello"
+msgstr ""
+
+#: includes/helpers-general.php:55 includes/helpers-general.php:178
+msgid "Pulse"
+msgstr ""
+
+#: includes/helpers-general.php:56
+msgid "Rubber band"
+msgstr ""
+
+#: includes/helpers-general.php:57
+msgid "Swing"
+msgstr ""
+
+#: includes/helpers-general.php:58
+msgid "Tada"
+msgstr ""
+
+#: includes/helpers-general.php:59
+msgid "Wobble"
+msgstr ""
+
+#: includes/helpers-general.php:63
+msgid "Bouncing"
+msgstr ""
+
+#: includes/helpers-general.php:64 includes/helpers-general.php:182
+msgid "Bounce in"
+msgstr ""
+
+#: includes/helpers-general.php:65
+msgid "Bounce in down"
+msgstr ""
+
+#: includes/helpers-general.php:66
+msgid "Bounce in left"
+msgstr ""
+
+#: includes/helpers-general.php:67
+msgid "Bounce in right"
+msgstr ""
+
+#: includes/helpers-general.php:68
+msgid "Bounce in up"
+msgstr ""
+
+#: includes/helpers-general.php:72
+msgid "Flipping"
+msgstr ""
+
+#: includes/helpers-general.php:73
+msgid "Flip"
+msgstr ""
+
+#: includes/helpers-general.php:74
+msgid "Flip in X"
+msgstr ""
+
+#: includes/helpers-general.php:75
+msgid "Flip in Y"
+msgstr ""
+
+#: includes/helpers-general.php:79
+msgid "Rotating"
+msgstr ""
+
+#: includes/helpers-general.php:80
+msgid "Rotate in"
+msgstr ""
+
+#: includes/helpers-general.php:81
+msgid "Rotate in down left"
+msgstr ""
+
+#: includes/helpers-general.php:82
+msgid "Rotate in down right"
+msgstr ""
+
+#: includes/helpers-general.php:83
+msgid "Rotate in up left"
+msgstr ""
+
+#: includes/helpers-general.php:84
+msgid "Rotate in up right"
+msgstr ""
+
+#: includes/helpers-general.php:88
+msgid "Sliding"
+msgstr ""
+
+#: includes/helpers-general.php:89
+msgid "Slide in down"
+msgstr ""
+
+#: includes/helpers-general.php:90
+msgid "Slide in left"
+msgstr ""
+
+#: includes/helpers-general.php:91
+msgid "Slide in right"
+msgstr ""
+
+#: includes/helpers-general.php:92
+msgid "Slide in up"
+msgstr ""
+
+#: includes/helpers-general.php:96
+msgid "Zooming"
+msgstr ""
+
+#: includes/helpers-general.php:97
+msgid "Zoom in"
+msgstr ""
+
+#: includes/helpers-general.php:98
+msgid "Zoom in down"
+msgstr ""
+
+#: includes/helpers-general.php:99
+msgid "Zoom in left"
+msgstr ""
+
+#: includes/helpers-general.php:100
+msgid "Zoom in right"
+msgstr ""
+
+#: includes/helpers-general.php:101
+msgid "Zoom in up"
+msgstr ""
+
+#: includes/helpers-general.php:105
+msgid "Specials"
+msgstr ""
+
+#: includes/helpers-general.php:106
+msgid "Light speed in"
+msgstr ""
+
+#: includes/helpers-general.php:107
+msgid "Roll in"
+msgstr ""
+
+#: includes/helpers-general.php:121
+msgid "Animation timing"
+msgstr ""
+
+#: includes/helpers-general.php:125
+msgid "Duration"
+msgstr ""
+
+#: includes/helpers-general.php:130
+msgid "Delay"
+msgstr ""
+
+#: includes/helpers-general.php:152
+msgid "Repeat animation?"
+msgstr ""
+
+#: includes/helpers-general.php:169
+msgid "Hover animation"
+msgstr ""
+
+#: includes/helpers-general.php:175
+msgid "Transitions"
+msgstr ""
+
+#: includes/helpers-general.php:176
+msgid "Grow"
+msgstr ""
+
+#: includes/helpers-general.php:177
+msgid "Shrink"
+msgstr ""
+
+#: includes/helpers-general.php:179
+msgid "Pulse grow"
+msgstr ""
+
+#: includes/helpers-general.php:180
+msgid "Pulse shrink"
+msgstr ""
+
+#: includes/helpers-general.php:181
+msgid "Push"
+msgstr ""
+
+#: includes/helpers-general.php:183
+msgid "Bounce out"
+msgstr ""
+
+#: includes/helpers-general.php:184
+msgid "Rotate"
+msgstr ""
+
+#: includes/helpers-general.php:185
+msgid "Grow rotate"
+msgstr ""
+
+#: includes/helpers-general.php:186
+msgid "Float"
+msgstr ""
+
+#: includes/helpers-general.php:187
+msgid "Sink"
+msgstr ""
+
+#: includes/helpers-general.php:188
+msgid "Bob"
+msgstr ""
+
+#: includes/helpers-general.php:189
+msgid "Hang"
+msgstr ""
+
+#: includes/helpers-general.php:190
+msgid "Skew"
+msgstr ""
+
+#: includes/helpers-general.php:191
+msgid "Skew forward"
+msgstr ""
+
+#: includes/helpers-general.php:192
+msgid "Skew backward"
+msgstr ""
+
+#: includes/helpers-general.php:193
+msgid "Wobble horizontal"
+msgstr ""
+
+#: includes/helpers-general.php:194
+msgid "Wobble vertical"
+msgstr ""
+
+#: includes/helpers-general.php:195
+msgid "Wobble to bottom right"
+msgstr ""
+
+#: includes/helpers-general.php:196
+msgid "Wobble to top right"
+msgstr ""
+
+#: includes/helpers-general.php:197
+msgid "Wobble top"
+msgstr ""
+
+#: includes/helpers-general.php:198
+msgid "Wobble bottom"
+msgstr ""
+
+#: includes/helpers-general.php:199
+msgid "Wobble skew"
+msgstr ""
+
+#: includes/helpers-general.php:200
+msgid "Buzz"
+msgstr ""
+
+#: includes/helpers-general.php:201
+msgid "Buzz out"
+msgstr ""
+
+#: includes/helpers-general.php:202
+msgid "Forward"
+msgstr ""
+
+#: includes/helpers-general.php:203
+msgid "Backward"
+msgstr ""
+
+#: includes/helpers-general.php:215
+msgid "Visibility"
+msgstr ""
+
+#: includes/helpers-general.php:216
+msgid "Select the screen sizes on which to hide this element"
+msgstr ""
+
+#: includes/helpers-general.php:240
+msgid "Shadow color"
+msgstr ""
+
+#: includes/helpers-general.php:275
+msgid "Horizontal shadow"
+msgstr ""
+
+#: includes/helpers-general.php:300
+msgid "Vertical shadow"
+msgstr ""
+
+#: includes/helpers-general.php:325
+msgid "Blur"
+msgstr ""
+
+#: includes/helpers-general.php:350
+msgid "Spread"
+msgstr ""
+
+#: includes/helpers-general.php:375
+msgid "ID"
+msgstr ""
+
+#: includes/helpers-video.php:25
+msgid "Video overlay color"
+msgstr ""
+
+#: includes/helpers-video.php:45
+msgid "Background video"
+msgstr ""
+
+#: includes/helpers-video.php:46
+msgid "The selected background image will be used as the fallback image"
+msgstr ""
+
+#: includes/helpers-video.php:161
+msgid "Your browser does not support the video tag.  Please consider upgrading to a modern browser."
+msgstr ""
+
+#: includes/shortcodes/shortcode-image.php:75
+msgid "Please select an image to display"
+msgstr ""
+
+#: tailor-advanced.php:144
+msgid "Please ensure that Tailor %s (or newer) is active to use the Advanced extension."
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "Tailor - Advanced features"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.gettailor.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Adds advanced functionality to the Tailor plugin."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Andrew Worsfold"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.andrewworsfold.com"
+msgstr ""

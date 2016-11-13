@@ -8,30 +8,24 @@ Tested up to: 4.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 
-Adds advanced features to the Tailor page builder.
+Adds new features and functionality to the Tailor page builder.
 
 == Description ==
 
 This extension adds advanced functionality to the [Tailor](https://wordpress.org/plugins/tailor) frontend page builder.
 
+> Tailor version 1.7.5 (or newer) must be active to use this extension
+
 = Elements =
-
-The following elements are added by this extension:
-
 - Restricted content
 - Image
 
 = Features =
-
-The following features are added by this extension:
-
 - Custom IDs for all elements.
 - Entrance animations including duration, delay and repeat settings (using [Animate.css](https://daneden.github.io/animate.css/)).
 - Hover animations for content element (using [Hover.css](http://ianlunn.github.io/Hover/)).
 - Advanced box shadow settings.
 - Video backgrounds for Sections (HTML5, YouTube and Vimeo supported).
-
-> Tailor version 1.7.5 (or newer) must be active to use this extension
 
 To get started with Tailor, refer to our [documentation](https://support.gettailor.com/hc/en-us/categories/202586427-Getting-started).
 

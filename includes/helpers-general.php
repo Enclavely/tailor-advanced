@@ -34,7 +34,7 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 				''                  =>  __( 'None', 'tailor-advanced' ),
 
 				// Fading
-				_( 'Fading', 'tailor-advanced' ) =>  array(
+				__( 'Fading', 'tailor-advanced' ) =>  array(
 					'fadeIn'            =>  __( 'Fade in', 'tailor-advanced' ),
 					'fadeInDown'        =>  __( 'Fade in down', 'tailor-advanced' ),
 					'fadeInDownBig'     =>  __( 'Fade in down big', 'tailor-advanced' ),
@@ -47,7 +47,7 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 				),
 
 				// Attention seekers
-				_( 'Attention seekers', 'tailor-advanced' ) =>  array(
+				__( 'Attention seekers', 'tailor-advanced' ) =>  array(
 					'bounce'            =>  __( 'Bounce', 'tailor-advanced' ),
 					'flash'             =>  __( 'Flash', 'tailor-advanced' ),
 					'headShake'         =>  __( 'Head shake', 'tailor-advanced' ),
@@ -60,7 +60,7 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 				),
 
 				// Bouncing
-				_( 'Bouncing', 'tailor-advanced' ) =>  array(
+				__( 'Bouncing', 'tailor-advanced' ) =>  array(
 					'bounceIn'          =>  __( 'Bounce in', 'tailor-advanced' ),
 					'bounceInDown'      =>  __( 'Bounce in down', 'tailor-advanced' ),
 					'bounceInLeft'      =>  __( 'Bounce in left', 'tailor-advanced' ),
@@ -69,14 +69,14 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 				),
 
 				// Flipping
-				_( 'Flipping', 'tailor-advanced' ) =>  array(
+				__( 'Flipping', 'tailor-advanced' ) =>  array(
 					'flip'              =>  __( 'Flip', 'tailor-advanced' ),
 					'flipInX'           =>  __( 'Flip in X', 'tailor-advanced' ),
 					'flipInY'           =>  __( 'Flip in Y', 'tailor-advanced' ),
 				),
 
 				// Rotating
-				_( 'Rotating', 'tailor-advanced' ) =>  array(
+				__( 'Rotating', 'tailor-advanced' ) =>  array(
 					'rotateIn'          =>  __( 'Rotate in', 'tailor-advanced' ),
 					'rotateInDownLeft'  =>  __( 'Rotate in down left', 'tailor-advanced' ),
 					'rotateInDownRight' =>  __( 'Rotate in down right', 'tailor-advanced' ),
@@ -85,7 +85,7 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 				),
 
 				// Sliding
-				_( 'Sliding', 'tailor-advanced' ) =>  array(
+				__( 'Sliding', 'tailor-advanced' ) =>  array(
 					'slideInDown'       =>  __( 'Slide in down', 'tailor-advanced' ),
 					'slideInLeft'       =>  __( 'Slide in left', 'tailor-advanced' ),
 					'slideInRight'      =>  __( 'Slide in right', 'tailor-advanced' ),
@@ -93,7 +93,7 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 				),
 
 				// Zooming
-				_( 'Zooming', 'tailor-advanced' ) =>  array(
+				__( 'Zooming', 'tailor-advanced' ) =>  array(
 					'zoomIn'            =>  __( 'Zoom in', 'tailor-advanced' ),
 					'zoomInDown'        =>  __( 'Zoom in down', 'tailor-advanced' ),
 					'zoomInLeft'        =>  __( 'Zoom in left', 'tailor-advanced' ),
@@ -102,7 +102,7 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 				),
 
 				// Specials
-				_( 'Specials', 'tailor-advanced' ) =>  array(
+				__( 'Specials', 'tailor-advanced' ) =>  array(
 					'lightSpeedIn'      =>  __( 'Light speed in', 'tailor-advanced' ),
 					'rollIn'            =>  __( 'Roll in', 'tailor-advanced' ),
 				),
@@ -122,12 +122,12 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 			'type'                  =>  'input-group',
 			'choices'               =>  array(
 				'duration'              =>  array(
-					'label'                 =>  __( 'Duration' ),
+					'label'                 =>  __( 'Duration', 'tailor-advanced' ),
 					'type'                  =>  'number',
 					'unit'                  =>  'ms',
 				),
 				'delay'                 =>  array(
-					'label'                 =>  __( 'Delay' ),
+					'label'                 =>  __( 'Delay', 'tailor-advanced' ),
 					'type'                  =>  'number',
 					'unit'                  =>  'ms',
 				),
@@ -213,7 +213,7 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 		) );
 		$element->add_control( 'hidden', array(
 			'label'                 =>  __( 'Visibility', 'tailor' ),
-			'description'                 =>  __( 'Select the screen sizes on which to hide this element', 'tailor' ),
+			'description'                 =>  __( 'Select the screen sizes on which to hide this element', 'tailor-advanced' ),
 			'type'                  =>  'select-multi',
 			'choices'               =>  tailor_get_media_queries(),
 			'priority'              =>  $priority += 10,
