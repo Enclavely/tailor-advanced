@@ -172,7 +172,7 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 					''                  =>  __( 'None', 'tailor-advanced' ),
 
 					// Transitions
-					_( 'Transitions', 'tailor-advanced' ) =>  array(
+					__( 'Transitions', 'tailor-advanced' ) =>  array(
 						'grow'                      =>  __( 'Grow', 'tailor-advanced' ),
 						'shrink'                    =>  __( 'Shrink', 'tailor-advanced' ),
 						'pulse'                     =>  __( 'Pulse', 'tailor-advanced' ),
