@@ -6,6 +6,7 @@
 
 	// Components
 	require( './shared/components/ui/video' );
+	require( './shared/components/ui/stretch' );
 
 	// Render callbacks
 	ElementAPI.onRender( 'tailor_section', function( atts, model ) {
@@ -14,6 +15,13 @@
 				this.$el.data( 'tailorParallax' ).destroy();
 			}
 			this.$el.tailorVideo();
+		}
+
+		if ( 'stretch' == atts['width'] ) {
+			this.$el.tailorStretch();
+		}
+		else if ( 'stretch_content' == atts['width'] ) {
+			this.$el.tailorStretch( { retainContentWidth: false } );
 		}
 	} );
 
@@ -172,7 +180,104 @@
 	} );
 	
 } ) ( window.Tailor.Api.Element || {}, window.Tailor.Api.Setting || {} );
-},{"./shared/components/ui/video":2}],2:[function(require,module,exports){
+},{"./shared/components/ui/stretch":2,"./shared/components/ui/video":3}],2:[function(require,module,exports){
+/**
+ * Tailor.Components.Stretch
+ *
+ * A component used to stretch sections.
+ *
+ * @class
+ */
+var $ = window.jQuery,
+    Components = window.Tailor.Components,
+    Stretch;
+
+
+Stretch = Components.create( {
+
+    getDefaults : function () {
+        return {
+            retainContentWidth : true
+        };
+    },
+
+	/**
+     * Initializes the component.
+     *
+     * @since 1.0.1
+     */
+    onInitialize : function () {
+        this.parent = this.el.parentNode;
+        this.content = this.$el.children( '.tailor-section__content' ).get( 0 );
+        
+        this.applyStyles();
+    },
+
+	/**
+     * Refreshes styles when the screen is resized.
+     *
+     * @since 1.0.1
+     */
+    onResize: function() {
+        this.refreshStyles();
+    },
+
+	/**
+     * Apply styles to the Section and its content.
+     *
+     * @since 1.0.1
+     */
+    applyStyles: function() {
+        var rect = this.el.getBoundingClientRect();
+        var width = rect.width;
+        var left = rect.left;
+
+        this.el.style.width = window.innerWidth + 'px';
+        this.el.style.marginLeft = - left + 'px';
+
+        if ( this.options.retainContentWidth ) {
+            this.content.style.maxWidth = width + 'px';
+            this.content.style.marginLeft = left + 'px';
+        }
+        else {
+            this.content.style.width = '100%';
+            this.content.style.marginLeft = '0px';
+        }
+    },
+
+	/**
+     * Resets styles for the Section and its content.
+     *
+     * @since 1.0.1
+     */
+    resetStyles : function() {
+        this.el.style = '';
+        this.content.style = '';
+    },
+
+	/**
+	 * Refreshes styles for the Section and its content.
+     *
+     * @since 1.0.1
+     */
+    refreshStyles: function() {
+        this.resetStyles();
+        this.applyStyles();
+    }
+
+} );
+
+$.fn.tailorStretch = function( options, callbacks ) {
+    return this.each( function() {
+        var instance = $.data( this, 'tailorStretch' );
+        if ( ! instance ) {
+            $.data( this, 'tailorStretch', new Stretch( this, options, callbacks ) );
+        }
+    } );
+};
+
+module.exports = Stretch;
+},{}],3:[function(require,module,exports){
 /**
  * Tailor.Components.Video
  *

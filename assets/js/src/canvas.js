@@ -5,6 +5,7 @@
 
 	// Components
 	require( './shared/components/ui/video' );
+	require( './shared/components/ui/stretch' );
 
 	// Render callbacks
 	ElementAPI.onRender( 'tailor_section', function( atts, model ) {
@@ -13,6 +14,13 @@
 				this.$el.data( 'tailorParallax' ).destroy();
 			}
 			this.$el.tailorVideo();
+		}
+
+		if ( 'stretch' == atts['width'] ) {
+			this.$el.tailorStretch();
+		}
+		else if ( 'stretch_content' == atts['width'] ) {
+			this.$el.tailorStretch( { retainContentWidth: false } );
 		}
 	} );
 

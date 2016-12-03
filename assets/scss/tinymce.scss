@@ -15,6 +15,7 @@
 
 	.#{$global-class-prefix}section {
 
+		&.has-background-image,
 		&.has-background-video {
 
 			.#{$global-class-prefix}section {

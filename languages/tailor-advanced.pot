@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Tailor - Advanced features package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Tailor - Advanced features 1.0.0\n"
+"Project-Id-Version: Tailor - Advanced features 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tailor-advanced\n"
-"POT-Creation-Date: 2016-11-13 09:03:52+00:00\n"
+"POT-Creation-Date: 2016-12-03 06:25:16+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -82,7 +82,7 @@ msgid "Display a single image."
 msgstr ""
 
 #: includes/helpers-elements.php:32 includes/helpers-elements.php:38
-#: includes/helpers-video.php:15
+#: includes/helpers-general.php:397
 msgid "Advanced"
 msgstr ""
 
@@ -458,19 +458,35 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-#: includes/helpers-video.php:25
+#: includes/helpers-general.php:404
+msgid "Width"
+msgstr ""
+
+#: includes/helpers-general.php:407
+msgid "Standard"
+msgstr ""
+
+#: includes/helpers-general.php:408
+msgid "Stretched background"
+msgstr ""
+
+#: includes/helpers-general.php:409
+msgid "Stretched background and content"
+msgstr ""
+
+#: includes/helpers-general.php:423
 msgid "Video overlay color"
 msgstr ""
 
-#: includes/helpers-video.php:45
+#: includes/helpers-general.php:443
 msgid "Background video"
 msgstr ""
 
-#: includes/helpers-video.php:46
+#: includes/helpers-general.php:444
 msgid "The selected background image will be used as the fallback image"
 msgstr ""
 
-#: includes/helpers-video.php:161
+#: includes/helpers-video.php:63
 msgid "Your browser does not support the video tag.  Please consider upgrading to a modern browser."
 msgstr ""
 

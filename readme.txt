@@ -2,7 +2,7 @@
 Contributors: andrew.worsfold
 Donate link: http://gettailor.com/donate/
 Tags: tailor, page, layout, builder, frontend, content, page builder, drag and drop builder, home page builder, landing page builder, layout builder, frontend builder, frontend editor, responsive, visual composer, beaver builder
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires at least: 4.3
 Tested up to: 4.7
 License: GPLv3 or later
@@ -14,7 +14,7 @@ Adds new features and functionality to the Tailor page builder.
 
 This extension adds advanced functionality to the [Tailor](https://wordpress.org/plugins/tailor) frontend page builder.
 
-> Tailor version 1.7.5 (or newer) must be active to use this extension
+> Tailor version 1.7.7 (or newer) must be active to use this extension
 
 = Elements =
 - Restricted content
@@ -26,6 +26,7 @@ This extension adds advanced functionality to the [Tailor](https://wordpress.org
 - Hover animations for content element (using [Hover.css](http://ianlunn.github.io/Hover/)).
 - Advanced box shadow settings.
 - Video backgrounds for Sections (HTML5, YouTube and Vimeo supported).
+- Ability to stretch Section backgrounds and/or content to fill the full width of the screen.
 
 To get started with Tailor, refer to our [documentation](https://support.gettailor.com/hc/en-us/categories/202586427-Getting-started).
 
@@ -87,6 +88,9 @@ Yes.  Tailored pages can be migrated like any other type of page using the [dupl
 Yes, however, users should be directed to the WordPress plugin repository to install the latest version of the plugin.  Consider using a tool like [TGM Plugin Activation](http://tgmpluginactivation.com/) to guide users through the installation process.
 
 == Changelog ==
+
+= 1.0.1 =
+* Added - Stretch Section backgrounds and/or content to fill the full width of the screen.
 
 = 1.0.0 =
 * Initial release.

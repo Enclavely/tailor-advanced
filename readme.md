@@ -18,6 +18,7 @@ The following features are added by this extension:
 * Hover animations for content element (using [Hover.css](http://ianlunn.github.io/Hover/)).
 * Advanced box shadow settings.
 * Video backgrounds for Sections (HTML5, YouTube and Vimeo supported).
+* Ability to stretch Section backgrounds and/or content to fill the full width of the screen.
 
 With much more on the way.. 
 

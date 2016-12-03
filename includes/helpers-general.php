@@ -382,6 +382,128 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 	add_action( 'tailor_element_register_controls', 'tailor_add_custom_controls' );
 }
 
+if ( ! function_exists( 'tailor_add_section_background_video_controls' ) ) {
+
+	/**
+	 * Adds advanced controls to Section elements.
+	 *
+	 * @since 1.0.1
+	 *
+	 * @param Tailor_Section_Element $section_element
+	 */
+	function tailor_add_advanced_section_controls( $section_element ) {
+
+		// Add the 'Advanced' label
+		$section_element->badge = __( 'Advanced', 'tailor-advanced' );
+
+		// Add the overlay color setting/control
+		$section_element->add_setting( 'width', array(
+			'sanitize_callback'     =>  'tailor_sanitize_text',
+		) );
+		$section_element->add_control( 'width', array(
+			'label'                 =>  __( 'Width', 'tailor-advanced' ),
+			'type'                  =>  'select',
+			'choices'               =>  array(
+				''                      =>  __( 'Standard', 'tailor-advanced' ),
+				'stretch'               =>  __( 'Stretched background', 'tailor-advanced' ),
+				'stretch_content'       =>  __( 'Stretched background and content', 'tailor-advanced' ),
+			),
+			'priority'              =>  5,
+			'section'               =>  'general',
+		) );
+
+		// Add the overlay color setting/control
+		$section_element->add_setting( 'overlay_color', array(
+			'sanitize_callback'     =>  'tailor_sanitize_color',
+			'refresh'               =>  array(
+				'method'                =>  'js',
+			),
+		) );
+		$section_element->add_control( 'overlay_color', array(
+			'label'                 =>  __( 'Video overlay color', 'tailor-advanced' ),
+			'type'                  =>  'colorpicker',
+			'rgba'                  =>  1,
+			'priority'              =>  70,
+			'section'               =>  'colors',
+			'dependencies'          =>  array(
+				'background_video'      =>  array(
+					'condition'             =>  'not',
+					'value'                 =>  '',
+				),
+			),
+		) );
+
+		$priority = 120;
+
+		// Add the background video setting/control
+		$section_element->add_setting( 'background_video', array(
+			'sanitize_callback'     =>  'tailor_sanitize_number',
+		) );
+		$section_element->add_control( 'background_video', array(
+			'label'                 =>  __( 'Background video', 'tailor-advanced' ),
+			'description'           =>  __( 'The selected background image will be used as the fallback image', 'tailor-advanced' ),
+			'type'                  =>  'video',
+			'priority'              =>  $priority += 10,
+			'section'               =>  'attributes',
+			'dependencies'          =>  array(
+				'background_type'       => array(
+					'condition'             =>  'equals',
+					'value'                 =>  'video',
+				),
+			),
+		) );
+
+		// Update control dependencies
+		$max_width_control = $section_element->get_control( 'max_width' );
+		$max_width_control->dependencies = array(
+			'width'                 => array(
+				'condition'             =>  'equals',
+				'value'                 =>  '',
+			),
+		);
+
+		$parallax_control = $section_element->get_control( 'parallax' );
+		$parallax_control->dependencies = array(
+			'background_image'      => array(
+				'condition'             =>  'not',
+				'value'                 =>  '',
+			),
+			'background_video'      => array(
+				'condition'             =>  'equals',
+				'value'                 =>  '',
+			),
+		);
+
+		// Update image attribute control dependencies
+		$background_image_controls = array(
+			'background_repeat',
+			'background_position',
+			'background_attachment',
+			'background_size'
+		);
+
+		foreach ( $background_image_controls as $control_type ) {
+			$control = $section_element->get_control( $control_type );
+			$control-> dependencies = array(
+				'background_image'      => array(
+					'condition'             =>  'not',
+					'value'                 =>  '',
+				),
+				'background_video'      => array(
+					'condition'             =>  'equals',
+					'value'                 =>  '',
+				),
+				'parallax'              => array(
+					'condition'             =>  'not',
+					'value'                 =>  '1',
+				),
+			);
+		}
+	}
+
+	add_action( 'tailor_element_register_controls_tailor_section', 'tailor_add_advanced_section_controls' );
+}
+
 if ( ! function_exists( 'tailor_add_box_shadow_css_rules' ) ) {
 
 	/**
