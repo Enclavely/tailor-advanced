@@ -10,18 +10,17 @@
 
 	// Render callbacks
 	ElementAPI.onRender( 'tailor_section', function( atts, model ) {
-		if ( atts['background_video'] ) {
-			if ( atts['background_image'] && atts['parallax'] ) {
-				this.$el.data( 'tailorParallax' ).destroy();
-			}
-			this.$el.tailorVideo();
-		}
-
 		if ( 'stretch' == atts['width'] ) {
 			this.$el.tailorStretch();
 		}
 		else if ( 'stretch_content' == atts['width'] ) {
 			this.$el.tailorStretch( { retainContentWidth: false } );
+		}
+		if ( atts['background_video'] ) {
+			if ( atts['background_image'] && atts['parallax'] ) {
+				this.$el.data( 'tailorParallax' ).destroy();
+			}
+			this.$el.tailorVideo();
 		}
 	} );
 
@@ -37,15 +36,6 @@
 	} );
 
 	// Setting change callbacks
-	SettingAPI.onChange( 'element:stretch', function( to, from, model ) {
-		return [ {
-			'selectors' : [ '.wp-caption-text' ],
-			'declarations' : {
-				'color' : tailorValidateColor( to )
-			}
-		} ]
-	} );
-	
 	SettingAPI.onChange( 'element:id', function( to, from, model ) {
 		this.el.id = to.replace( / /g,'' );
 	} );

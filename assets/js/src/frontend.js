@@ -4,16 +4,30 @@
 	'use strict';
 
 	require( './shared/components/ui/video' );
+	require( './shared/components/ui/stretch' );
 
 	Tailor.initAdvancedElements = function() {
 
-		$( '.tailor-section.has-background-video' ).each( function() {
+		$( '.tailor-section' ).each( function() {
 			var $el = $( this );
-			var parallax = $el.data( 'tailorParallax' );
-			if ( parallax ) {
-				parallax.destroy();
+			if ( this.classList.contains( 'js-stretch' ) ) {
+				$el.tailorStretch();
 			}
-			$el.tailorVideo();
+			else if ( this.classList.contains( 'js-stretch-content' ) ) {
+				$el.tailorStretch( { retainContentWidth: false } );
+			}
+			if ( this.classList.contains( 'has-background-video' ) ) {
+				var parallax = $el.data( 'tailorParallax' );
+				if ( parallax ) {
+					parallax.destroy();
+				}
+				$el.tailorVideo();
+			}
+		} );
+
+		$( '.tailor-image' ).each( function() {
+			var $el = $( this );
+			$el.tailorLightbox();
 		} );
 
 		$( '[data-animation]' ).each( function() {
