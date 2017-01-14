@@ -212,7 +212,7 @@ if ( ! function_exists( 'tailor_add_custom_controls' ) ) {
 			'sanitize_callback'     =>  'tailor_sanitize_text',
 		) );
 		$element->add_control( 'hidden', array(
-			'label'                 =>  __( 'Visibility', 'tailor' ),
+			'label'                 =>  __( 'Visibility', 'tailor-advanced' ),
 			'description'                 =>  __( 'Select the screen sizes on which to hide this element', 'tailor-advanced' ),
 			'type'                  =>  'select-multi',
 			'choices'               =>  tailor_get_media_queries(),
