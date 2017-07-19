@@ -60,7 +60,7 @@ if ( ! function_exists( 'tailor_add_background_video_html' ) ) {
 							'</video>',
 							esc_attr( $video[1] ),  // Video type
 							esc_url( $video[0] ),   // Video URL
-							__( 'Your browser does not support the video tag.  Please consider upgrading to a modern browser.', 'tailor' )
+							__( 'Your browser does not support the video tag.  Please consider upgrading to a modern browser.', 'tailor-advanced' )
 						);
 						break;
 				}
