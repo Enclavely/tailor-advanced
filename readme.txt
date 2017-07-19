@@ -1,5 +1,5 @@
 === Tailor Page Builder: Advanced Features ===
-Contributors: andrew.worsfold
+Contributors: andrew.worsfold, enclavely, munirkamal, essamamdani
 Donate link: http://gettailor.com/donate/
 Tags: tailor, page, layout, builder, frontend, content, page builder, drag and drop builder, home page builder, landing page builder, layout builder, frontend builder, frontend editor, responsive, visual composer, beaver builder
 Stable tag: 1.0.2
