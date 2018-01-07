@@ -49,7 +49,7 @@ Stretch = Components.create( {
         var width = rect.width;
         var left = rect.left;
 
-        this.el.style.width = window.innerWidth + 'px';
+        this.el.style.width = document.body.clientWidth + 'px';
         this.el.style.marginLeft = - left + 'px';
 
         if ( this.options.retainContentWidth ) {
